@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view>
+  <block  wx:for="{{news}}" wx:for-item="item" wx:for-index="idx"  >
+    <view>
+        <view>{{item.text}}</view>
+        <image width='20px' height='20px' src="{{item.profile_image}}" />
+    </view>
+  </block>
+</view>
