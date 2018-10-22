@@ -1,2 +1,17 @@
 <!--pages/video/video.wxml-->
-<text>pages/video/video.wxml</text>
+<view class="my">
+  <block  wx:for="{{video}}" wx:for-item="item" wx:for-index="idx"  >
+    <view class='item'>
+      <view>
+        <view>{{item.text}}</view>
+        <view class="video"> 
+          <video src="{{item.video}}"   controls ></video>
+        </view>
+      </view>
+      <view class="user">
+        <image class="header" mode='scaleToFill'  src="{{item.header}}"></image>
+        <text class='username'>{{item.username}}</text>
+      </view>
+    </view>
+  </block>
+</view>

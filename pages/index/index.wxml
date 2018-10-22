@@ -1,9 +1,15 @@
 <!--index.wxml-->
-<view>
+<view class="my">
   <block  wx:for="{{news}}" wx:for-item="item" wx:for-index="idx"  >
-    <view>
+    <view class='item'>
+      <view>
         <view>{{item.text}}</view>
-        <image width='20px' height='20px' src="{{item.profile_image}}" />
+        <image src="{{item.gif}}" />
+      </view>
+      <view class="user">
+        <image class="header" mode='scaleToFill'  src="{{item.header}}"></image>
+        <text class='username'>{{item.username}}</text>
+      </view>
     </view>
   </block>
 </view>

@@ -3,44 +3,53 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/video/video",
-    "pages/user/user"
+    "pages/user/user",
+    "pages/notify/notify",
+    "pages/chat/chat"
   ],
   "window": {
     "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#f22",
-    "navigationBarTitleText": "unwhisper",
-    "navigationBarTextStyle": "black",
-    "enablePullDownRefresh":true
+    "navigationBarBackgroundColor": "#0068C4",
+    "navigationBarTitleText": "鸡毛",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
-    "selectedColor": "#f22",
-    "backgroundColor": "#eee",
+    "color":"#626567",
+    "selectedColor": "#2A8CE5",
+    "backgroundColor": "#FBFBFB",
     "borderStyle": "white",
     "position": "bottom",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "text": "",
+        "iconPath": "image/index.png",
+        "selectedIconPath": "image/index_focus.png"
       },
       {
         "pagePath": "pages/video/video",
-        "text": "视频",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "text": "",
+        "iconPath": "image/discovery.png",
+        "selectedIconPath": "image/discovery_focus.png"
+      },
+      {
+        "pagePath": "pages/notify/notify",
+        "text": "",
+        "iconPath": "image/ring.png",
+        "selectedIconPath": "image/ring_focus.png"
+      },
+      {
+        "pagePath": "pages/chat/chat",
+        "text": "",
+        "iconPath": "image/chat.png",
+        "selectedIconPath": "image/chat_focus.png"
       },
       {
         "pagePath": "pages/user/user",
-        "text": "我的",
-        "iconPath": "",
-        "selectedIconPath": ""
-      },
-      {
-        "pagePath": "pages/logs/logs",
-        "text": "日志",
-        "iconPath": "",
-        "selectedIconPath": ""
+        "text": "",
+        "iconPath": "image/burger.png",
+        "selectedIconPath": "image/burger_focus.png"
       }
     ]
   },
